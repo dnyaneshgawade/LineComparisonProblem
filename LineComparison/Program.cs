@@ -16,7 +16,7 @@ namespace LineComparison
                 Console.WriteLine("The length of first is greater than second line.");
             if (length1.CompareTo(length2) < 0)
                 Console.WriteLine("The length of first is less than second line");
-            if (length1.CompareTo(length2) == 0)
+            if (length1.CompareTo(length2) == 0 | length1.Equals(length2))
                 Console.WriteLine("both lines are equals");
         }
     }

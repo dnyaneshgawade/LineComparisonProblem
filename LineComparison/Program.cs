@@ -12,12 +12,12 @@ namespace LineComparison
             length1 = line1.Calculate();
             Line line2 = new Line(2, 3, 4, 5);
             length2 = line2.Calculate();
-
-            line2.Calculate();
-            if (length1.Equals(length2))
-                Console.WriteLine("both lines are same size");
-            else
-                Console.WriteLine("both lines are different sizes");
+            if (length1.CompareTo(length2)>0)
+                Console.WriteLine("The length of first is greater than second line.");
+            if (length1.CompareTo(length2) < 0)
+                Console.WriteLine("The length of first is less than second line");
+            if (length1.CompareTo(length2) == 0)
+                Console.WriteLine("both lines are equals");
         }
     }
 }
